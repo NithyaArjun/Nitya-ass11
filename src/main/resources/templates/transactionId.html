@@ -1,0 +1,13 @@
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <title>Online Bank</title>
+    <link rel="stylesheet" href="/css/transactions.css"/>
+</head>
+<body>
+<h2>Transaction History</h2>
+<div>Date : [[${transactions.date}]]</div>
+<div>Amount : [[${transactions.amount}]]</div>
+<div>Description : [[${transactions.description}]]</div>
+<div><a href="/transactions">Back</a></div>
+</body>
+</html>
