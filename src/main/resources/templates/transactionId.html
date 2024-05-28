@@ -6,7 +6,7 @@
 <body>
 <h2>Transaction History</h2>
 <div>Date : [[${transactions.date}]]</div>
-<div>Amount : [[${transactions.amount}]]</div>
+<div>Amount   <span th:if="${transactions.type == 'C'}">:</span> -[[${transactions.amount}]]</div>
 <div>Description : [[${transactions.description}]]</div>
 <div><a href="/transactions">Back</a></div>
 </body>
